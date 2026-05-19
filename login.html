@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXTPLAY — Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+
+  <div id="login-page">
+
+    <div id="login-card">
+
+      <div id="login-header">
+        <img src="/images/navbarLogo.png" alt="NXTPLAY Logo">
+        <p>Welcome back. Log in to your account.</p>
+      </div>
+
+      <div id="login-form">
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <span class="field-error" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <span class="field-error" id="password-error"></span>
+        </div>
+
+        <button id="login-btn">Log In</button>
+
+        <p id="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="alert-box" class="hidden">
+    <p id="alert-message"></p>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+
+</html>
