@@ -54,7 +54,7 @@ document.querySelectorAll('.order-btn').forEach(btn => {
     const sessionCheck = JSON.parse(localStorage.getItem('nxtplay-current-user') || 'null');
     if (!sessionCheck) {
       showAlert('Please log in to place an order.');
-      setTimeout(() => { window.location.href = '/login.html'; }, 1500);
+      setTimeout(() => { window.location.href = '../login.html'; }, 1500);
       return;
     }
 
@@ -393,7 +393,7 @@ document.getElementById('order-now-btn').addEventListener('click', () => {
   const currentUser = JSON.parse(localStorage.getItem('nxtplay-current-user') || 'null');
 
   if (!currentUser) {
-    window.location.href = 'login.html';
+    window.location.href = '../login.html';
     return;
   }
 
@@ -422,7 +422,7 @@ document.getElementById('order-now-btn').addEventListener('click', () => {
   localStorage.setItem(orderKey, JSON.stringify(existing));
 
   document.getElementById('summary-overlay').classList.add('hidden');
-  window.location.href = 'orders.html?success=1';
+  window.location.href = '../orders.html?success=1';
 });
 
 // Back on summary

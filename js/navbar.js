@@ -15,7 +15,7 @@ if (currentUser) {
       <p id="dropdown-name">${currentUser.fullname}</p>
       <p id="dropdown-email">${currentUser.email}</p>
       <hr id="dropdown-divider">
-      <a href="orders.html" id="dropdown-orders">My Orders</a>
+      <a href="../pages/orders.html" id="dropdown-orders">My Orders</a>
       <button id="dropdown-logout">Log Out</button>
     `;
 
@@ -39,7 +39,7 @@ if (currentUser) {
     // Logout button
     document.getElementById('dropdown-logout').addEventListener('click', () => {
       localStorage.removeItem('nxtplay-current-user');
-      window.location.href = '/login.html';
+      window.location.href = '../login.html';
     });
   }
 }

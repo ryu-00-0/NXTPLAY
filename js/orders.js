@@ -1,7 +1,7 @@
 const ordersUser = JSON.parse(localStorage.getItem('nxtplay-current-user') || 'null');
 
 if (!ordersUser) {
-  window.location.href = '/login.html';
+  window.location.href = '../login.html';
 } else {
 
   const orderKey = `nxtplay-orders-${ordersUser.email}`;
@@ -12,7 +12,7 @@ if (!ordersUser) {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('success') === '1') {
     document.getElementById('success-overlay').classList.remove('hidden');
-    window.history.replaceState({}, '', 'orders.html');
+    window.history.replaceState({}, '', '../pages/orders.html');
   }
 
   document.getElementById('success-overlay').addEventListener('click', function(e) {

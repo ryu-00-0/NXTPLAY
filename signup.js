@@ -99,5 +99,5 @@ document.getElementById('login-btn').addEventListener('click', () => {
   users.push({ fullname, email, phone, street, city, zip, password });
   localStorage.setItem('nxtplay-users', JSON.stringify(users));
   showAlert('Account created! Redirecting to login...', false);
-  setTimeout(() => { window.location.href = 'login.html'; }, 1500);
+  setTimeout(() => { window.location.href = '../login.html'; }, 1500);
 });
