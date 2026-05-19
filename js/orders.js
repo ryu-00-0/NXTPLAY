@@ -1,7 +1,7 @@
 const ordersUser = JSON.parse(localStorage.getItem('nxtplay-current-user') || 'null');
 
 if (!ordersUser) {
-  window.location.href = '../login.html';
+  window.location.href = '/login.html';
 } else {
 
   const orderKey = `nxtplay-orders-${ordersUser.email}`;
